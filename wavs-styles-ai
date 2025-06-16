@@ -98,14 +98,14 @@ Elevation 1 – Static / Grayed
 	•	Hover: Dim to 85% (if interactive)
 
 Elevation 2 – Interactive
-	•	Radius: 15px
-	•	BG: neutral800
-	•	Border: neutral700
-	•	Drop Shadow:
-	•	Offset: 12px 12px
-	•	Blur: 24px
-	•	Color: #000000 @15%
-	•	Hover: Dim to 85%
+- Radius: 15px
+- BG: neutral800
+- Border: neutral700
+- Drop Shadow:
+	Offset: 12px 12px
+	Blur: 24px
+	Color: #000000 @15%
+	Hover: Dim to 85%
 
 ⸻
 
