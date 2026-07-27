@@ -1,0 +1,104 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from '@storybook/blocks';
+import { palette, textColor, iconColor, surface, border, button, typography, radius, spacing } from './tokens';
+
+{/*
+  CUE Design System — Foundations
+  Place this file alongside tokens.ts (adjust the import path if you move it).
+  It renders your tokens as browsable panels in Storybook's Docs.
+*/}
+
+<Meta title="Foundations/Design Tokens" />
+
+# CUE Design System — Tokens
+
+These values are extracted from the CUE Figma file. Colors, typography, radius and
+spacing below are the single source of truth used across all components.
+
+## Palette
+
+<ColorPalette>
+  <ColorItem title="Grey" subtitle="Neutral" colors={palette.grey} />
+  <ColorItem title="Primary" subtitle="Warm / brand" colors={palette.primary} />
+  <ColorItem title="Green" subtitle="Success" colors={palette.green} />
+  <ColorItem title="Blue" subtitle="Info" colors={palette.blue} />
+  <ColorItem title="Yellow" subtitle="Warning" colors={palette.yellow} />
+  <ColorItem title="Red" subtitle="Error / destructive" colors={palette.red} />
+  <ColorItem title="Accent" subtitle="Accent" colors={palette.accent} />
+</ColorPalette>
+
+## Semantic — Text
+
+<ColorPalette>
+  <ColorItem title="Text" subtitle="Text Color/*" colors={textColor} />
+</ColorPalette>
+
+## Semantic — Icon
+
+<ColorPalette>
+  <ColorItem title="Icon" subtitle="Icon Color/*" colors={iconColor} />
+</ColorPalette>
+
+## Semantic — Surface & Border
+
+<ColorPalette>
+  <ColorItem title="Surface" subtitle="Surface Color/*" colors={surface} />
+  <ColorItem title="Border" subtitle="Border Color/*" colors={border} />
+</ColorPalette>
+
+## Semantic — Button
+
+<ColorPalette>
+  <ColorItem title="Button" subtitle="Button/*" colors={button} />
+</ColorPalette>
+
+## Typography
+
+Font family: **DM Sans** (Regular 400 for body, SemiBold 600 for headings & buttons).
+
+<Typeset
+  fontSizes={[
+    `${typography.scale.c3.size}px`,
+    `${typography.scale.c1.size}px`,
+    `${typography.scale.b4.size}px`,
+    `${typography.scale.b3.size}px`,
+    `${typography.scale.b2.size}px`,
+    `${typography.scale.b1.size}px`,
+    `${typography.scale.h2.size}px`,
+    `${typography.scale.h5.size}px`,
+    `${typography.scale.h1.size}px`,
+  ]}
+  fontWeight={typography.fontWeight.regular}
+  sampleText="The quick brown fox jumps over the lazy dog"
+  fontFamily={typography.fontFamily.body}
+/>
+
+## Radius
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, alignItems: 'flex-end' }}>
+  {Object.entries(radius).map(([name, value]) => (
+    <div key={name} style={{ textAlign: 'center', fontFamily: 'DM Sans, sans-serif' }}>
+      <div
+        style={{
+          width: 72,
+          height: 72,
+          background: palette.primary[500],
+          borderRadius: Math.min(Number(value), 36),
+        }}
+      />
+      <div style={{ marginTop: 8, fontSize: 12 }}>{name}</div>
+      <div style={{ fontSize: 11, color: '#888' }}>{value}px</div>
+    </div>
+  ))}
+</div>
+
+## Spacing
+
+<div style={{ fontFamily: 'DM Sans, sans-serif' }}>
+  {Object.entries(spacing).map(([name, value]) => (
+    <div key={name} style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+      <div style={{ width: 60, fontSize: 12 }}>space-{name}</div>
+      <div style={{ height: 16, width: Number(value), background: palette.accent.mint }} />
+      <div style={{ fontSize: 11, color: '#888' }}>{value}px</div>
+    </div>
+  ))}
+</div>
