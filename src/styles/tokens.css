@@ -1,0 +1,190 @@
+/**
+ * CUE Design System — Design Tokens
+ * Extracted from Figma (file: CUE-design).
+ *
+ * @tokens Colors
+ * @presenter Color
+ */
+:root {
+  /* ---- Palette: Neutral / Grey ---- */
+  --color-grey-300: #d1ccc4;
+  --color-grey-500: #757069;
+  --color-grey-600: #55514c;
+  --color-grey-800: #272522;
+  --color-grey-900: #1a1816;
+
+  /* ---- Palette: Primary (Purple/warm) ---- */
+  --color-primary-100: #e5dcd6;
+  --color-primary-200: #e2d4c9;
+  --color-primary-500: #caa07e;
+  --color-primary-700: #98755a;
+  --color-primary-900: #4b321e;
+
+  /* ---- Palette: Green ---- */
+  --color-green-50: #edf8f5;
+  --color-green-100: #d9f2ec;
+  --color-green-500: #38f5c9;
+  --color-green-700: #248f76;
+  --color-green-800: #1d6353;
+  --color-green-900: #143d34;
+
+  /* ---- Palette: Blue ---- */
+  --color-blue-50: #e6f4ff;
+  --color-blue-400: #33aaff;
+  --color-blue-500: #0095ff;
+  --color-blue-800: #00528c;
+  --color-blue-900: #003f6b;
+
+  /* ---- Palette: Yellow ---- */
+  --color-yellow-50: #fceed7;
+  --color-yellow-400: #e6b377;
+  --color-yellow-500: #dda25d;
+  --color-yellow-800: #9b6e28;
+  --color-yellow-900: #7f5710;
+
+  /* ---- Palette: Red ---- */
+  --color-red-50: #f4e4e6;
+  --color-red-100: #f3e3e6;
+  --color-red-400: #cf6e83;
+  --color-red-500: #b84259;
+  --color-red-600: #843343;
+  --color-red-800: #452329;
+  --color-red-900: #331a1e;
+
+  /* ---- Palette: Accent ---- */
+  --color-accent-purple: #8a38f5;
+  --color-accent-mint: #38f5c9;
+
+  /* ---- Palette: White / Black (with alpha) ---- */
+  --color-white: #ffffff;
+  --color-white-70: #ffffffb2;
+  --color-white-20: #ffffff33;
+  --color-white-5: #ffffff0d;
+  --color-black: #000000;
+  --color-black-40: #00000066;
+
+  /**
+   * @tokens Text Colors
+   * @presenter Color
+   */
+  --text-primary: #f2efea;
+  --text-secondary: #a39d95;
+  --text-grey: #757069;
+  --text-disabled: #757069;
+  --text-accent: #f9f7f3;
+  --text-primary-contrast: #1a1816;
+  --text-secondary-contrast: #00000099;
+  --text-success: #5ee8c8;
+  --text-info: #54b8ff;
+  --text-warning: #e6b377;
+  --text-error: #dc999f;
+
+  /**
+   * @tokens Icon Colors
+   * @presenter Color
+   */
+  --icon-primary: #f9f7f3;
+  --icon-accent: #d3ac8d;
+  --icon-grey: #a39d95;
+  --icon-light-grey: #757069;
+  --icon-black: #1a1816;
+  --icon-dark: #272522;
+  --icon-white: #f9f7f3;
+  --icon-success: #5ee8c8;
+  --icon-info: #33aaff;
+  --icon-warning: #e6b377;
+  --icon-error: #cf6e83;
+
+  /**
+   * @tokens Surface Colors
+   * @presenter Color
+   */
+  --surface-primary: #1a1816;
+  --surface-accent: #4b321e;
+  --surface-overlay: #1f1d1be5;
+  --surface-overlay-2: #413e3a;
+  --surface-bottom-sheets: #1a1816;
+  --surface-raised-soft: #ffffff05;
+  --surface-raised-strong: #ffffff0d;
+
+  /**
+   * @tokens Border Colors
+   * @presenter Color
+   */
+  --border-default: #ffffff05;
+  --border-card: #ffffff05;
+  --border-strong: #ffffff0d;
+  --border-accent: #caa07e;
+
+  /**
+   * @tokens Button Colors
+   * @presenter Color
+   */
+  --button-primary-bg: #f2efea;
+  --button-primary-text: #1a1816;
+  --button-secondary-bg: #ffffff0d;
+  --button-secondary-text: #f2efea;
+  --button-secondary-border: #ffffff0d;
+  --button-destructive-bg: #452329;
+  --button-destructive-text: #dc999f;
+  --button-tertiary-text: #e4e0d9;
+
+  /**
+   * @tokens Typography — Font Families
+   * @presenter FontFamily
+   */
+  --font-body: 'DM Sans', sans-serif;    /* weight 400 */
+  --font-heading: 'DM Sans', sans-serif; /* weight 600 */
+
+  /* ---- Font weights ---- */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /**
+   * @tokens Typography — Font Sizes
+   * @presenter FontSize
+   */
+  --font-size-c3: 10px;   /* Caption C3 */
+  --font-size-c1: 12px;   /* Caption C1 */
+  --font-size-b4: 13px;   /* Body B4 */
+  --font-size-b3: 14px;   /* Body B3 */
+  --font-size-b2: 16px;   /* Body B2 / Subtitle S2 */
+  --font-size-b1: 18px;   /* Body B1 */
+  --font-size-h2: 20px;   /* Heading H2 */
+  --font-size-h5: 24px;   /* Heading H5 */
+  --font-size-h1: 28px;   /* Heading H1 */
+
+  /* ---- Line heights ---- */
+  --line-height-tight: 1.2;
+  --line-height-body: 1.4;
+
+  /**
+   * @tokens Radius
+   * @presenter Spacing
+   */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-badge: 8px;
+  --radius-card: 12px;
+  --radius-input: 12px;
+  --radius-button-tiny: 6px;
+  --radius-button: 999px;  /* pill */
+  --radius-avatar: 999px;
+  --radius-full: 999px;
+
+  /**
+   * @tokens Spacing
+   * @presenter Spacing
+   */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* ---- Elevation / Shadow ---- */
+  --shadow-500: 0 10px 32px -4px rgba(19, 25, 39, 0.10), 0 6px 14px -6px rgba(19, 25, 39, 0.12);
+}
